@@ -4,7 +4,12 @@
 */
 
 #fila2 {
-    background-color: moccasin;
+    background-color: #F0B429;
+}
+
+
+.nav{
+    padding: 7px;
 }
 
 header{
@@ -14,3 +19,47 @@ header{
     align-items: center;
 }
 
+.d-block{
+    width:250px; 
+    height:322px;
+}
+
+#cardContacto, #cardSocial, #cardVisitas{
+    border-style: none; 
+}
+
+h3{
+    font-size: 39px;
+    text-align: center;
+    padding: 23px;
+}
+
+.card-header, .card-body, .card-footer{
+    text-align: center;
+}
+
+.card-header{
+    background-color: #F0B429;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight:bold;
+}
+
+p{
+    text-align: left;
+    margin-top: -19px;
+}
+
+#objPricipal{
+    text-align: justify;
+}
+
+#fila6{
+    background-color: #005883;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight:bold;
+}

@@ -32,7 +32,7 @@
                             <a class="nav-link active" href="#">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Lecturas</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/navbar/icons8-literatura-32.png"/> Lecturas</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Lecturas 1</a>
                                 <a class="dropdown-item" href="#">Lecturas 2</a>
@@ -42,10 +42,11 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Multimedia</a>
+                            <a class="nav-link" href="#"><img src="img/navbar/icons8-reproducir-en-círculo-32.png"/> Multimedia</a>
+                            
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Actividades</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/navbar/icons8-historia-de-la-actividad-32.png"/> Actividades</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Actividades 1</a>
                                 <a class="dropdown-item" href="#">Actividades 2</a>
@@ -53,23 +54,40 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Autores</a>
+                            <a class="nav-link" href="#"><img src="img/navbar/icons8-derechos-de-autor-32.png"/>Autores</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
+<!--                    <script>
+                    (function() {
+                      var cx = '005543028110034371482:zjz9uxiylie';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                    })();
+                    </script>
+                    <gcse:search></gcse:search>-->
                     <nav class="navbar navbar-expand-xl">
                         <form class="form-inline" action="#">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar" style="width: 335px;">
                             <button class="btn btn-success" type="submit">Buscar</button>
                         </form>
                     </nav>
                 </div>
             </div>
             <!--Fin fila 2-->
-            <div id="fila3" class="row">
-                <div class="col-sm-12"><h3>Temario del Curso de Administración de Bases de Datos</h3></div>
-            </div>
+                <div id="fila3" class="row">
+                    <div class="col-sm-12">
+                        <h3>Temario del Curso de Administración de Bases de Datos</h3>
+                        <div id="objPricipal" class="alert alert-info" role="alert">
+                                <strong>Objetivo General:</strong> Representar por intermedio de diferentes elementos multimedia la conceptualización sucinta de los temas que rodean y permiten la administración efectiva de un sistema de base de datos, en pro de la correcta apropiación de los conocimientos adquiridos.
+                            </div>
+                    </div>
+                </div>
             <!--Fin fila 3-->
             <div id="fila4" class="row">
                 <div class="col-sm-6">
@@ -78,7 +96,12 @@
                         <div class="card-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/ieAur6M6Pdo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                         </div> 
-                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                        <div class="card-footer">
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Objetivo:</strong> Definir y conceptualizar que es la administración de una base de datos y todos aquellos aspectos conceptuales que le permiten al estdiante ubicarse dentro del tema objeto de estudio.
+                            </div>
+                            <a href="#" class="btn btn-info" role="button">Ver Lectura</a>
+                        </div>
                     </div>
                     <br>
                 </div>
@@ -88,7 +111,12 @@
                         <div class="card-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/nkY6bQ-fPRs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                         </div> 
-                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                        <div class="card-footer">
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Objetivo:</strong> Determinar lo pasos que se deben seguir en la implementación de un Modelo Relacional a nivel de base de datos.
+                            </div>
+                            <a href="#" class="btn btn-info" role="button">Ver Lectura</a>
+                        </div>
                     </div>
                     <br>
                 </div>
@@ -101,7 +129,12 @@
                         <div class="card-body">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/p3nmRwUD7ik?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                         </div> 
-                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                        <div class="card-footer">
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Objetivo:</strong> Resaltar el uso  e importancia de LDD, LMD y LCD en el modelo relacional de un sistema de información.
+                            </div>
+                            <a href="#" class="btn btn-info" role="button">Ver Lectura</a>
+                        </div>
                     </div>
                     <br>
                 </div>
@@ -117,10 +150,10 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="d-block w-100" src="img/tipoSentencia.png" alt="Tipos de Sentencias SQL">
+                                        <img class="d-block w-100" src="img/tipoSentencia.png" alt="Tipos de Sentencias SQL" >
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="img/SentenciasSQL.png" alt="Sentencias SQL">
+                                        <img class="d-block w-100" src="img/SentenciasSQL.png" alt="Sentencias SQL" >
                                     </div>
                                     <div class="carousel-item">
                                         <img class="d-block w-100" src="img/Recomendaciones.jpg" alt="Recomendaciones">
@@ -136,36 +169,50 @@
                                 </a>
                             </div>
                         </div> 
-                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                        <div class="card-footer">
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Objetivo:</strong> Ampliar el contexto general de los tipos de sentencias SQL, permitiendo determinar que LDD, LMD y LCD se requiere para admnistrar un sistema de información relacional.
+                            </div>
+                            <a href="#" class="btn btn-info" role="button">Ver Lectura</a>
+                        </div>
                     </div>
                     <br>
                 </div>
             </div>
             <!--Fin fila 5-->
             <div id="fila6" class="row">
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-header">Contacto</div>
-                        <div class="card-body">
-                            <p>Direccion</p>
-                            <p>Email</p>
-                            <p>Telefono</p>
+                <div class="col-sm-5">
+                    <div id="cardContacto" class="card">
+                        <div class="card-header"><h4>Contacto</h4></div>
+                        <div class="card-body" style="padding-bottom: 0px;">
+                            <p><b>Direccion:</b>Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23</p>
+                            <p><b>PBX:</b> ( +57 1 ) 344 3700 Bogotá D.C., Colombia</p>
+                            <p><b>Línea nacional gratuita desde Colombia:</b> 018000115223</p>
+                            <p><b>Atención al usuario:</b> atencionalusuario@unad.edu.co</p>
+                            <p><b>Anticorrupción:</b> anticorrupcion@unad.edu.co</p>
                         </div> 
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-header">Redes Sociales:</div>
+                    <div id="cardSocial" class="card">
+                        <div class="card-header"><h4>Nuestras Redes:</h4></div>
                         <div class="card-body">
-                            tres Botones
+                        <a href="http://twitter.com/UniversidadUNAD" target="_blank"><img src="img/redesSociales/icons8-twitter-cuadrado-48.png" title="Síganos en Twitter - @universidadUNAD"/></a>
+                        <a href="https://www.facebook.com/UniversidadUNAD" target="_blank"><img src="img/redesSociales/icons8-facebook-48.png" title="Síganos en nuestra fanpage en Facebook - /UniversidadUNAD"/></a>
+                        <a href="http://www.youtube.com/universidadunad" target="_blank"><img src="img/redesSociales/icons8-youtube-play-48.png" title="Suscríbase a nuestro canal en Youtube en - UniversidadUNAD"/></a>
+                        <a href="https://www.flickr.com/photos/universidadunad" target="_blank"><img src="img/redesSociales/icons8-flickr-48.png" title="Síganos en FlickR - UniversidadUNAD"/></a>
+                        <a href="https://www.instagram.com/universidadunad/" target="_blank"><img src="img/redesSociales/icons8-instagram-48.png" title="Síganos en Instagram - @UniversidadUNAD"/></a>
                         </div> 
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-header">Contador de Visitas</div>
+                <div class="col-sm-3">
+                    <div id="cardVisitas" class="card">
+                        <div class="card-header"><h4>Nuestras Visitas</h4></div>
                         <div class="card-body">
-                            Url contador
+                            <!-- Codigo contadorvisitas.com ver. 4.3 -->
+                            <img src="img/redesSociales/icons8-llamada-de-conferencia-48.png"/>
+                            <script language="javascript" src="http://aux01.contadorvisitas.com/hitv4.php?digit=blushdw&page=96d2e6dcf831259d6d743ebf976fa913&t=1539621608"></script>
+                            <!-- FIN Codigo contadorvisitas.com -->
                         </div> 
                     </div>
                 </div>
