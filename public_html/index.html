@@ -1,14 +1,182 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
     <head>
         <title>Administracion Base de Datos - UNAD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico">
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!--Estilos-->
+        <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
+        
     </head>
     <body>
-        <div><p>Administración Base de Datos - UNAD</p>
-            Pagina en construcción. 
+        <div class="container-fluid">
+            
+            <div id="fila1" class="row">
+                <header>
+                <div class="col-sm-6"><img src="img/logoUNAD-HD.png"/></div>
+                <div class="col-sm-6"><h1>Administracion Base de Datos - UNAD</h1></div>
+                </header>
+            </div>
+            <!--Fin fila 1-->
+            
+            <div id="fila2" class="row">
+                <div class="col-sm-8">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Lecturas</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Lecturas 1</a>
+                                <a class="dropdown-item" href="#">Lecturas 2</a>
+                                <a class="dropdown-item" href="#">Lecturas 3</a>
+                                <a class="dropdown-item" href="#">Lecturas 4</a>
+                                <a class="dropdown-item" href="#">Lecturas 5</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Multimedia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Actividades</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Actividades 1</a>
+                                <a class="dropdown-item" href="#">Actividades 2</a>
+                                <a class="dropdown-item" href="#">Actividades 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <nav class="navbar navbar-expand-xl">
+                        <form class="form-inline" action="#">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+            <!--Fin fila 2-->
+            <div id="fila3" class="row">
+                <div class="col-sm-12"><h3>Temario del Curso de Administración de Bases de Datos</h3></div>
+            </div>
+            <!--Fin fila 3-->
+            <div id="fila4" class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">Administración de SGBD</div>
+                        <div class="card-body">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ieAur6M6Pdo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div> 
+                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">Modelo Relacional</div>
+                        <div class="card-body">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nkY6bQ-fPRs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div> 
+                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!--Fin fila 4-->
+            <div id="fila5" class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">Tipos de Sentencias SQL LDD-LMD-LCD(I)</div>
+                        <div class="card-body">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/p3nmRwUD7ik?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div> 
+                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">Tipos de Sentencias SQL LDD-LMD-LCD(II)</div>
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/tipoSentencia.png" alt="Tipos de Sentencias SQL">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/SentenciasSQL.png" alt="Sentencias SQL">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/Recomendaciones.jpg" alt="Recomendaciones">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div> 
+                        <div class="card-footer"><a href="#" class="btn btn-info" role="button">Ver</a></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!--Fin fila 5-->
+            <div id="fila6" class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contacto</div>
+                        <div class="card-body">
+                            <p>Direccion</p>
+                            <p>Email</p>
+                            <p>Telefono</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Redes Sociales:</div>
+                        <div class="card-body">
+                            tres Botones
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contador de Visitas</div>
+                        <div class="card-body">
+                            Url contador
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!--Fin fila 6-->
         </div>
+        <!--Fin Container-->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-slim.min.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
