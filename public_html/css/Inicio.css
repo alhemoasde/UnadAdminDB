@@ -4,7 +4,7 @@
 */
 
 #fila2 {
-    background-color: moccasin;
+    background-color: #F0B429;
 }
 
 
@@ -38,7 +38,28 @@ h3{
     text-align: center;
 }
 
+.card-header{
+    background-color: #F0B429;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight:bold;
+}
+
 p{
     text-align: left;
     margin-top: -19px;
+}
+
+#objPricipal{
+    text-align: justify;
+}
+
+#fila6{
+    background-color: #005883;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight:bold;
 }
