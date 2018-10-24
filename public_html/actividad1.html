@@ -16,6 +16,7 @@
 
         <!--Estilos-->
         <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Actividad1.css" rel="stylesheet" type="text/css"/>
         
     </head>
     <body>
@@ -77,13 +78,10 @@
             <!--Fin fila 2-->
                 <div id="fila3" class="row">
                     <div class="col-sm-12">
-                        <h3>Diseño de Bases de Datos</h3>
+                        <h3>Actividad Pedagógica Sobre Administración de Bases de Datos</h3>
                         <div id="objPricipal" class="alert alert-info" role="alert">
-                                Un aspecto de valiosa importancia en el desarrollo de sistemas de información, 
-                                es la estructura relacional de la base de datos que soportara sus 
-                                operaciones basicas y avanzadas de escritura y lectura de información, 
-                                por ello la importancia de su diseño. Un sistema que base su funcionamiento en un 
-                                esquema relacional bien diseñado provee a la aplicación precisión e integridad en los datos. 
+                                Respetado Estudiante Unadista a continuación usted podrá reforzar su conocimientos 
+                                con una serie de actividades pedagógicas que le permitiran asimilar mejor los conocimiento recibidos. <strong>Bienvenido</strong>. 
                             </div>
                     </div>
                 </div>
@@ -91,10 +89,86 @@
             <div id="fila4" class="row">
                 <div class="col-sm-12">
                     <div class="card">
-                        <div class="card-header">Etapas del Diseño de Bases de Datos Relacionales</div>
-                        <div class="card-body">
-                            <embed src="pdfFiles/DisenoDB.pdf" width="1200" height="800" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
-                        </div> 
+                        <div class="card-header">Test de Conocimientos</div>
+                       <div id="trivia" class="card-body">
+                        <!--xxxxxxxxxxxxxxx-->
+                        <h2><div id="pregunta" class="badge badge-secondary"> </div></h2>
+                        <div id="respuestas" ><input name="pp" value="0" type="radio"><label> </label><br><input name="pp" value="1" type="radio"><label>Tienen hambre</label><br><input name="pp" value="2" type="radio"><label> </label><br><input name="pp" value="3" type="radio"><label>Tienen frío</label><br></div>
+
+                        <button type="button" class="btn btn-success" onclick="comprobar()">Validar Respuesta</button>
+                        </div>
+                        <script>
+                                var preguntas = [
+                                "¿De quien depende la disponibilidad de los datos?",
+                                "¿Que significa esta sigla SGBD?",
+                                "El Administrador de Bases de Datos tambien se le conoce como:",
+                                "Una de las funciones mas relevantes que debe desarrollar un DBA es:"
+
+                                ];
+                                var respuestas = [
+                                ["Administrador", "Del Gerente de la organización", "Del hardware del sevidor", "Tú"],
+                                ["Sistema Gestor de Bases de Datos", "Sistema Guia de Bases de Datos", "Sistema General Basado en Datos", "Sistema Gradual Binario de Datos"],
+                                ["DBA - DataBase Administrator", "DVA - DataBase Administrator", "BDA - DataBase Administrator", "Admin"],
+                                ["Crear y configurar bases de datos relacionales", "Realizar el levantamiento de requerimientos", "Realizar pruebas unitarias", "Dirigir el grupo de desarrollo"]
+
+                                ];
+                        jugar();
+
+                                var indicie_respuesta_correcta;
+
+                        function jugar(){
+                                        var indice_aleatorio = Math.floor(Math.random()*preguntas.length);
+
+                                var respuestas_posibles = respuestas[indice_aleatorio];
+
+
+                                var posiciones = [0,1,2,3];
+                                var respuestas_reordenadas = [];
+
+                                var respuestaOk = false;
+                                for(i in respuestas_posibles){
+                                        var posicion_aleatoria = Math.floor(Math.random()*posiciones.length);
+                                        if(posicion_aleatoria==0 && respuestaOk == false){
+                                                indicie_respuesta_correcta =i;
+                                                respuestaOk = true;
+                                        }
+                                        respuestas_reordenadas[i] = respuestas_posibles[posiciones[posicion_aleatoria]];
+                                        posiciones.splice(posicion_aleatoria, 1);
+                                }
+
+                                var txt_respuestas="";
+                                for(i in respuestas_reordenadas){
+                                        txt_respuestas += '<input type="radio" name="pp" value="'+i+'"><label>'+respuestas_reordenadas[i]+'</label><br>';
+                                }
+
+                                document.getElementById("respuestas").innerHTML = txt_respuestas;
+                                document.getElementById("pregunta").innerHTML = preguntas[indice_aleatorio];
+
+                        }
+                        function comprobar(){
+                        var respuesta = $("input[type=radio]:checked").val();
+
+                        //alert(respuesta);
+                        //alert(indicie_respuesta_correcta);
+                        if(respuesta ==indicie_respuesta_correcta){
+                                alert("Correcto, Felicitaciones!");
+                                '<div class="alert alert-success" role="alert">'
+                                    'Correcto, Felicitaciones!'
+                                  '</div>'
+                        }else{
+                                alert("Error, Revisa el Material de Estudio.");
+                                '<div class="alert alert-danger" role="alert">'
+                                    'Error, Revisa el Material de Estudio.'
+                                  '</div>'
+                        }
+                        jugar();
+                        }
+                        </script>
+                        <!--xxxxxxxxxxxxxxx-->
+                        
+                        
+                        
+                        
                         
                     </div>
                     <br>
