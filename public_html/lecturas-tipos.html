@@ -2,7 +2,7 @@
 
 <html lang="es">
     <head>
-        <title>Administrador Base de Datos - UNAD</title>
+        <title>Tipos de Sentencia - UNAD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/favicon.ico">
@@ -36,7 +36,7 @@
                                 <a class="dropdown-item" href="lecturas.html">Administrador de Base de Datos DBA</a>
                                 <a class="dropdown-item" href="lecturas-diseño.html">Diseño del Modelo Relacional</a>
                                 <a class="dropdown-item" href="lecturas-lenguaje.html">El Lenguaje SQL</a>
-                                <a class="dropdown-item" href="lenguaje-tipos.html">Tipos de Sentencia SQL</a>
+                                <a class="dropdown-item" href="lecturas-tipos.html">Tipos de Sentencia SQL</a>
                                 <a class="dropdown-item" href="lecturasbd.html">Bases de Datos en MySQL</a>
                             </div>
                         </li>
@@ -69,43 +69,63 @@
                <div id="main_wrapper">
             <header>
                 <div id="main_title">
-                    <h1>ADMINISTRADOR DE BASE DE DATOS</h1>
+                    <br><h1>TIPOS DE SENTENCIA SQL</h1></br>
                 </div>
             </header>
             
             <div id="banner_image">
-                <div id="banner_description"><br>
-                    El administrador de una base de datos le corresponde garantizar y optimizar la seguridad, integridad y estabilidad de las bases de datos, generando con ello que la información del negocio siempre esté disponible para suplir las necesidades de información de la empresa.</br> 
-                      <br>
-                        <center><img src="bdmysql.png"/></center></a>
-                    </br>
+                <div id="banner_description">
+                   En SQL tenemos bastantes sentencias que se pueden utilizar para realizar diversas tareas. 
+
+Dependiendo de las tareas, estas sentencias se pueden clasificar en tres grupos principales (DML, DDL,DCL), aunque nos quedaría otro grupo que a mi entender no está dentro del lenguaje SQL sino del PLSQL.
                 </div>
             </div>
-            
-            <section>
+             <section>
                 <article>
-                    <br> <h4><alt=/>Algunas Funciones del Administrador</h4></br>
-                    <p>Instalar, configurar y gestionar bases de datos.</p>
-                    <p>Dar soporte al equipo de desarrollo, seguridad informática y redes.</p>
-                    <p>Definir el esquema del diccionario de datos.</p>
-                    <p>Especificar restricciones de integridad para asegurar los datos.</p>
-                    <p>Garantizar la alta disponibilidad de la base de datos.</p>
-                    <p>Administrar el/los sistemas operativos donde corren las bases de datos.</p>
-                    <p>Diseñar la distribución de los datos y las soluciones de almacenamiento</p>
-                    <p>Garantizar la seguridad de las bases de datos, incluyendo backups y recuperación ante desastres.</p>
-                    <p>Desarrollar tareas de tuning de base de datos, tanto en las consultas SQL como en la configuración del servidor.</p>
-                    <p>Desarrollar tareas de Replicación.</p>
-                    <p>Dar soporte en la integración de aplicaciones de terceros.</p>
-                    <p>Desarrollar auditorias de usuarios (roles, perfiles y privilegios).</p>
-                    <p>Planificación de capacidad (gestionar el creciente volumen de las bases de datos).</p>
-                    <p>Administración de cambios y actualizaciones.</p>
                 <br>
-                    <p>(«ADMINISTRADOR DE BASE DE DATOS (DBA)», s. f.)</p>
-                </br>
+                 <h5><alt=/>COMPONENTES SINTÁCTICOS</h5></br>
+                   <p>La mayoría de sentencias SQL tienen la misma estructura. Todas comienzan por un verbo (select, insert, update, create), a continuación le sigue una o más cláusulas que nos dicen los datos con los que vamos a operar (from, where), algunas de estas son opcionales y otras obligatorias como es el caso del from.
+                   </p>
+               </br>
+              <center><img src="sentencia.png"/><p> Tipos de sentencias SQL y sus componentes sintácticos(2007),Recuperado de: https://desarrolloweb.com/articulos/tipos-de-sentencias-sql.html</p></center>  
+                   <br>  
+                    <h5><alt=/>  SENTENCIA                            DESCRIPCIÓN</h5></br>
+                    <p><b><h5>DML</b></h5></p>
+                    <p>Manipulación de datos</p>
+                    <p><b>SELECT</b>       Recupera datos de la base de datos.</p>
+                    <p><b>INSERT</b>       Añade nuevas filas de datos a la base de datos.</p>
+                    <p><b>DELETE</b>       Suprime filas de datos de la base de datos.</p>
+                    <p><b>UPDATE</b>       Añade una nueva tabla a la base de datos.</p>
+                   <br><p><b><h5>DDL</b></h5></p></b> 
+                    <p>Definición de datos</p>
+                    <p><b>CREATE TABLE</b>            Añade una nueva tabla a la base  de datos</p>
+                    <p><b>DROP TABLE</b>              Modifica la estructura de una tabla existente.</p>
+                    <p><b>ALTER TABLE</b>             Añade una nueva vista a la base de datos.</p>
+                    <p><b>CREATE VIEW</b>             Suprime una vista de la base de datos.</p>
+                    <p><b>DROP VIEW</b>               Construye un índice para una columna. </p>
+                    <p><b>CREATE INDEX</b>                 Suprime el índice para una columna.</p>
+                    <p><b>DROP INDEX</b>              Define un alias para un nombre de tabla.</p>
+                    <p><b>CREATE SYNOYM</b>           Suprime un alias para un nombre de tabla.</p>
+                    <p><b>DROP SYNONYM</b></p>
+                    <br><p><b><h5>DCL</b></h5></p></b>
+                    <p>Control de acceso</p>
+                    <p><b>GRANT</b>                            Concede privilegios de acceso a usuarios.</p>
+                    <p><b>REVOKE</b>                          Suprime privilegios de acceso a usuarios</p>
+                    <p><b>Control de transacciones</b>   Finaliza la transacción actual. </p>
+                    <p><b>COMMIT</b>                          Abarata la transacción actual.</p>
+                    <p><b>ROLLBACK</b></p>
+                    <br><p><b><h5>PLSQL</b></h5></p></b> 
+                    <p><b>SQL Programático</b>     Define un curso para una consulta.</p>
+                    <p><b>DECLARE</b></p>
+                    <p><b>OPEN </b>Abre un cursor para recuperar resultados de consulta.</p>
+                    <p><b>FETCH</b>Recupera una fila de resultados de consulta.</p>
+                    <p><b>CLOSE</b>Cierra un cursor.</p>
+                    <br>  
+ 
                 </article>
                 <aside>
-                
-                </footer>
+                               
+            </footer>
         </div>
                 <div id="fila6" class="row">
                 <div class="col-sm-4">

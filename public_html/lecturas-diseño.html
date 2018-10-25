@@ -2,7 +2,7 @@
 
 <html lang="es">
     <head>
-        <title>Administrador Base de Datos - UNAD</title>
+        <title>Diseño del Modelo Relacional - UNAD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/favicon.ico">
@@ -36,7 +36,7 @@
                                 <a class="dropdown-item" href="lecturas.html">Administrador de Base de Datos DBA</a>
                                 <a class="dropdown-item" href="lecturas-diseño.html">Diseño del Modelo Relacional</a>
                                 <a class="dropdown-item" href="lecturas-lenguaje.html">El Lenguaje SQL</a>
-                                <a class="dropdown-item" href="lenguaje-tipos.html">Tipos de Sentencia SQL</a>
+                                <a class="dropdown-item" href="lecturas-tipos.html">Tipos de Sentencia SQL</a>
                                 <a class="dropdown-item" href="lecturasbd.html">Bases de Datos en MySQL</a>
                             </div>
                         </li>
@@ -69,38 +69,30 @@
                <div id="main_wrapper">
             <header>
                 <div id="main_title">
-                    <h1>ADMINISTRADOR DE BASE DE DATOS</h1>
+                    <h1>DISEÑO DEL MODELO RELACIONAL</h1>
                 </div>
             </header>
             
             <div id="banner_image">
-                <div id="banner_description"><br>
-                    El administrador de una base de datos le corresponde garantizar y optimizar la seguridad, integridad y estabilidad de las bases de datos, generando con ello que la información del negocio siempre esté disponible para suplir las necesidades de información de la empresa.</br> 
-                      <br>
-                        <center><img src="bdmysql.png"/></center></a>
-                    </br>
+                <div id="banner_description">
+                    El proceso de diseño consiste en definir la estructura de los datos que debe tener un sistema de información determinado, mediante la implementación del modelo conceptual, lógico y físico de la base de datos.(campusMVP, s. f.)
+                    <a href="#" class="red_button">See article 
+                        <center><img src="diseñomr.png"/></a></center>
                 </div>
             </div>
             
             <section>
                 <article>
-                    <br> <h4><alt=/>Algunas Funciones del Administrador</h4></br>
-                    <p>Instalar, configurar y gestionar bases de datos.</p>
-                    <p>Dar soporte al equipo de desarrollo, seguridad informática y redes.</p>
-                    <p>Definir el esquema del diccionario de datos.</p>
-                    <p>Especificar restricciones de integridad para asegurar los datos.</p>
-                    <p>Garantizar la alta disponibilidad de la base de datos.</p>
-                    <p>Administrar el/los sistemas operativos donde corren las bases de datos.</p>
-                    <p>Diseñar la distribución de los datos y las soluciones de almacenamiento</p>
-                    <p>Garantizar la seguridad de las bases de datos, incluyendo backups y recuperación ante desastres.</p>
-                    <p>Desarrollar tareas de tuning de base de datos, tanto en las consultas SQL como en la configuración del servidor.</p>
-                    <p>Desarrollar tareas de Replicación.</p>
-                    <p>Dar soporte en la integración de aplicaciones de terceros.</p>
-                    <p>Desarrollar auditorias de usuarios (roles, perfiles y privilegios).</p>
-                    <p>Planificación de capacidad (gestionar el creciente volumen de las bases de datos).</p>
-                    <p>Administración de cambios y actualizaciones.</p>
+                    <p>En el diseño conceptual se hace una descripción de alto nivel de la estructura de la base de datos, independientemente del SGBD (Sistema Gestor de Bases de Datos) que se vaya a utilizar para manipularla. Su objetivo es describir el contenido de información de la base de datos y no las estructuras de almacenamiento que se necesitarán para manejar dicha información.
+<br>
+El diseño lógico parte del resultado del diseño conceptual y da como resultado una descripción de la estructura de la base de datos en términos de las estructuras de datos que puede procesar un tipo de SGBD. El diseño lógico depende del tipo de SGBD que se vaya a utilizar, se adapta a la tecnología que se debe emplear, pero no depende del producto concreto. En el caso de bases de datos convencionales relacionales (basadas en SQL para entendernos), el diseño lógico consiste en definir las tablas que existirán, las relaciones entre ellas, normalizarlas, etc...</br>
+<br>El diseño físico parte del lógico y da como resultado una descripción de la implementación de una base de datos en memoria secundaria: las estructuras de almacenamiento y los métodos utilizados para tener un acceso eficiente a los datos. Aquí el objetivo es conseguir una mayor eficiencia, y se tienen en cuenta aspectos concretos del SGBD sobre el que se vaya a implementar. Por regla general esto es transparente para el usuario, aunque conocer cómo se implementa ayuda a optimizar el rendimiento y la escalabilidad del sistema.</br>
+</p>
                 <br>
-                    <p>(«ADMINISTRADOR DE BASE DE DATOS (DBA)», s. f.)</p>
+                    <h4><alt=/>El Modelo Relacional</h4>
+                </br>
+                    <p>En el modelo relacional las dos capas de diseño conceptual y lógico, se parecen mucho. Generalmente se implementan mediante diagramas de Entidad/Relación (modelo conceptual) y tablas y relaciones entre éstas (modelo lógico). Este es el modelo utilizado por los sistemas gestores de datos más habituales (SQL Server, Oracle, MySQL...).</p>
+                <br><p>Diseñando una base de datos en el modelo relacional – campusMVP (s.f),Recuperado de: https://www.campusmvp.es/recursos/post/Disenando-una-base-de-datos-en-el-modelo-relacional.aspx</p>
                 </br>
                 </article>
                 <aside>

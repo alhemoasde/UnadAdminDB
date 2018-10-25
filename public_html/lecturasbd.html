@@ -2,7 +2,7 @@
 
 <html lang="es">
     <head>
-        <title>Administrador Base de Datos - UNAD</title>
+        <title>Base de Datos - UNAD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/favicon.ico">
@@ -36,7 +36,7 @@
                                 <a class="dropdown-item" href="lecturas.html">Administrador de Base de Datos DBA</a>
                                 <a class="dropdown-item" href="lecturas-diseño.html">Diseño del Modelo Relacional</a>
                                 <a class="dropdown-item" href="lecturas-lenguaje.html">El Lenguaje SQL</a>
-                                <a class="dropdown-item" href="lenguaje-tipos.html">Tipos de Sentencia SQL</a>
+                                <a class="dropdown-item" href="lecturas-tipos.html">Tipos de Sentencia SQL</a>
                                 <a class="dropdown-item" href="lecturasbd.html">Bases de Datos en MySQL</a>
                             </div>
                         </li>
@@ -68,44 +68,47 @@
             </div>
                <div id="main_wrapper">
             <header>
-                <div id="main_title">
-                    <h1>ADMINISTRADOR DE BASE DE DATOS</h1>
+                <div id="main_title"><br>
+                    <h1>BASE DE DATOS EN MySQL</h1>
+                    </br>
                 </div>
             </header>
             
             <div id="banner_image">
-                <div id="banner_description"><br>
-                    El administrador de una base de datos le corresponde garantizar y optimizar la seguridad, integridad y estabilidad de las bases de datos, generando con ello que la información del negocio siempre esté disponible para suplir las necesidades de información de la empresa.</br> 
+                <div id="banner_description">
+                   MySQL es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base datos de código abierto más popular del mundo,12 y una de las más populares en general junto a Oracle y Microsoft SQL Server, sobre todo para entornos de desarrollo web.
+<br>
+MySQL fue inicialmente desarrollado por MySQL AB (empresa fundada por David Axmark, Allan Larsson y Michael Widenius). MySQL AB fue adquirida por Sun Microsystems en 2008, y ésta a su vez fue comprada por Oracle Corporation en 2010, la cual ya era dueña desde 2005 de Innobase Oy, empresa finlandesa desarrolladora del motor InnoDB para MySQL.</br>
+<br>
+Al contrario de proyectos como Apache, donde el software es desarrollado por una comunidad pública y los derechos de autor del código están en poder del autor individual, MySQL es patrocinado por una empresa privada, que posee el copyright de la mayor parte del código. Esto es lo que posibilita el esquema de doble licenciamiento anteriormente mencionado. La base de datos se distribuye en varias versiones, una Community, distribuida bajo la Licencia pública general de GNU, versión 2, y varias versiones Enterprise, para aquellas empresas que quieran incorporarlo en productos privativos. Las versiones Enterprise incluyen productos o servicios adicionales tales como herramientas de monitorización y asistencia técnica oficial. En 2009 se creó un fork denominado MariaDB por algunos desarrolladores (incluido algunos desarrolladores originales de MySQL) descontentos con el modelo de desarrollo y el hecho de que una misma empresa controle a la vez los productos MySQL y Oracle Database.3</br>
+<br>
+Está desarrollado en su mayor parte en ANSI C y C++.4 Tradicionalmente se considera uno de los cuatro componentes de la pila de desarrollo LAMP y WAMP.</br>
                       <br>
-                        <center><img src="bdmysql.png"/></center></a>
-                    </br>
+                    <center><img src="bdmysql.png"/></center></a> 
+                </br>
                 </div>
             </div>
             
             <section>
                 <article>
-                    <br> <h4><alt=/>Algunas Funciones del Administrador</h4></br>
-                    <p>Instalar, configurar y gestionar bases de datos.</p>
-                    <p>Dar soporte al equipo de desarrollo, seguridad informática y redes.</p>
-                    <p>Definir el esquema del diccionario de datos.</p>
-                    <p>Especificar restricciones de integridad para asegurar los datos.</p>
-                    <p>Garantizar la alta disponibilidad de la base de datos.</p>
-                    <p>Administrar el/los sistemas operativos donde corren las bases de datos.</p>
-                    <p>Diseñar la distribución de los datos y las soluciones de almacenamiento</p>
-                    <p>Garantizar la seguridad de las bases de datos, incluyendo backups y recuperación ante desastres.</p>
-                    <p>Desarrollar tareas de tuning de base de datos, tanto en las consultas SQL como en la configuración del servidor.</p>
-                    <p>Desarrollar tareas de Replicación.</p>
-                    <p>Dar soporte en la integración de aplicaciones de terceros.</p>
-                    <p>Desarrollar auditorias de usuarios (roles, perfiles y privilegios).</p>
-                    <p>Planificación de capacidad (gestionar el creciente volumen de las bases de datos).</p>
-                    <p>Administración de cambios y actualizaciones.</p>
+                      <br>
+                    <h5><alt=/>Lenguajes de programación</h5>
+                      </br>
+                    <p>Existen varias interfaces de programación de aplicaciones que permiten, a aplicaciones escritas en diversos lenguajes de programación, acceder a las bases de datos MySQL, incluyendo C, C++, C#, Pascal, Delphi (vía dbExpress), Eiffel, Smalltalk, Java (con una implementación nativa del driver de Java), Lisp, Perl, PHP, Python, Ruby, Gambas, REALbasic (Mac y Linux), (x)Harbour (Eagle1), FreeBASIC, y Tcl; cada uno de estos utiliza una interfaz de programación de aplicaciones específica. También existe una interfaz ODBC, llamado MyODBC que permite a cualquier lenguaje de programación que soporte ODBC comunicarse con las bases de datos MySQL. También se puede acceder desde el sistema SAP, lenguaje ABAP.</p>
                 <br>
-                    <p>(«ADMINISTRADOR DE BASE DE DATOS (DBA)», s. f.)</p>
+                    <h5><alt=/>Características </h5></article
                 </br>
+                    <p>Las siguientes características son implementadas únicamente por MySQL:</p>
+                    <p>Permite escoger entre múltiples motores de almacenamiento para cada tabla. En MySQL 5.0 éstos debían añadirse en tiempo de compilación, a partir de MySQL 5.1 se pueden añadir dinámicamente en tiempo de ejecución:</p>
+                    <p>Los hay nativos como MyISAM, Falcon, Merge, InnoDB, BDB, Memory/heap, MySQL Cluster, Federated, Archive, CSV, Blackhole y Example.</p>
+                    <p>Desarrollados por partners como solidDB, NitroEDB, ScaleDB, TokuDB, Infobright (antes Brighthouse), Kickfire, XtraDB, IBM DB2. InnoDB Estuvo desarrollado así pero ahora pertenece también a Oracle.</p>
+                    <p>Desarrollados por partners como solidDB, NitroEDB, ScaleDB, TokuDB, Infobright (antes Brighthouse), Kickfire, XtraDB, IBM DB2. InnoDB Estuvo desarrollado así pero ahora pertenece también a Oracle.</p>
+                    <p>MySQL,(2018).Recuperado de: https://es.wikipedia.org/wiki/MySQL#Caracter%C3%ADsticas_adicionales</p>
+                   
                 </article>
                 <aside>
-                
-                </footer>
+       
+            </footer>
         </div>
                 <div id="fila6" class="row">
                 <div class="col-sm-4">
