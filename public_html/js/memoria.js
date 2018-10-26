@@ -21,10 +21,14 @@ function iniciarJuego () {
   cartas.sort(function() {return Math.random() - 0.5});
   for ( var i = 0 ; i < 16 ; i++ ) {
     var carta = cartas[i].nombre;
-    var dato = document.getElementById().innerHTML+="<img src=img/ahorcado/'"+i.toString()+"'/>'";
+//    var dato = document.getElementById().innerHTML+="<img src=img/ahorcado/'"+i.toString()+"'/>'";
 
-//    var dato = document.getElementById( i.toString() );
-    dato.dataset.valor = carta;
+//    $("#"+i.toString()).empty();
+//    $("#"+i.toString()).append("<img src=\"img/ahorcado/"+carta+"\"/>'");
+    var dato = document.getElementById( i.toString() );
+//     dato.innerHTML = "";
+//    dato.innerHTML = "<img src=\"img/ahorcado/"+carta+"\"/>'";
+    dato.dataset.valor = "<img src=\"img/ahorcado/"+carta+"\"/>'";
   }
 };
 
