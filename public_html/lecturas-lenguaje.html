@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>El Lenguaje SQL - UNAD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico">
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!--Estilos-->
+        <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <div id="fila1" class="row">
+                <header>
+                <div class="col-sm-6"><img src="img/logoUNAD-HD.png"/></div>
+                <div class="col-sm-6"><h1>Administracion Base de Datos - UNAD</h1></div>
+                </header>
+            </div>
+            <!--Fin fila 1-->
+            
+            <div id="fila2" class="row">
+                <div class="col-sm-8">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Lecturas</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="lecturas.html">Administrador de Base de Datos DBA</a>
+                                <a class="dropdown-item" href="lecturas-diseño.html">Diseño del Modelo Relacional</a>
+                                <a class="dropdown-item" href="lecturas-lenguaje.html">El Lenguaje SQL</a>
+                                <a class="dropdown-item" href="lecturas-tipos.html">Tipos de Sentencia SQL</a>
+                                <a class="dropdown-item" href="lecturasbd.html">Bases de Datos en MySQL</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Multimedia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Actividades</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Actividades 1</a>
+                                <a class="dropdown-item" href="#">Actividades 2</a>
+                                <a class="dropdown-item" href="#">Actividades 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <nav class="navbar navbar-expand-xl">
+                        <form class="form-inline" action="#">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+            
+            <div id="main_wrapper">
+                <header>
+                    <div id="main_title">
+                        <br>
+                        <h1>EL LENGUAJE SQL</h1>
+                        </br>
+                    </div>
+                </header>
+
+                <div id="banner_image">
+                    <div id="banner_description" style="text-align: justify">
+                        El lenguaje SQL sirve para operar las bases de datos, es un lenguaje de texto plano, que podemos usar desde cualquier editor de textos. Nos permite acceder y manipular las bases de datos.
+                    </div>
+                </div>
+
+                <section>
+                    <article>
+                        <br>
+                        <h2>Tipos de Sentencia</h2>
+                        </br>
+                        <center><img src="img/sql.png"/></center>
+                        <br><h2>Las sentencias de SQL se agrupan en tres tipos:</h2></br>
+                        <p style="text-align: justify"><b>DDL:</b>Lenguaje de definición de Datos : (Data Definition Languaje) Entran aquí las sentencias que definen y crean los objetos que soportan la base de datos (creación o supresión de bases, creación o supresión de tablas, relaciones entre tablas, claves en las tablas, etc.</p>
+                        <p style="text-align: justify"><b>DML:</b>Lenguaje de Manipulación de Datos : (Data Management Languaje) Entran aquí las sentencias para manejar los datos almacenados en las tablas, a nivel de campos (columnas) o registros (filas). Por ejemplo crear, cambiar o consultar registros o sus datos.</p>
+                        <p style="text-align: justify"><b>DCL:</b> Lenguaje de Control de Datos : (Data Control Languaje) Entran aquí las sentencias para controlar las funciones de administración y control de las bases.</p>
+                        <p style="text-align: justify">(«Características de SQL», s. f.)</p>
+                    </article>
+                </section>
+            </div>
+                <div id="fila6" class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contacto</div>
+                        <div class="card-body">
+                            <p>Direccion</p>
+                            <p>Email</p>
+                            <p>Telefono</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Redes Sociales:</div>
+                        <div class="card-body">
+                            tres Botones
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contador de Visitas</div>
+                        <div class="card-body">
+                            Url contador
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!--Fin fila 6-->
+        </div>
+        <!--Fin Container-->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-slim.min.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

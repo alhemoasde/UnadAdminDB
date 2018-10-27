@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>Diseño del Modelo Relacional - UNAD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico">
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!--Estilos-->
+        <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <div id="fila1" class="row">
+                <header>
+                <div class="col-sm-6"><img src="img/logoUNAD-HD.png"/></div>
+                <div class="col-sm-6"><h1>Administracion Base de Datos - UNAD</h1></div>
+                </header>
+            </div>
+            <!--Fin fila 1-->
+            
+            <div id="fila2" class="row">
+                <div class="col-sm-8">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Lecturas</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="lecturas.html">Administrador de Base de Datos DBA</a>
+                                <a class="dropdown-item" href="lecturas-diseño.html">Diseño del Modelo Relacional</a>
+                                <a class="dropdown-item" href="lecturas-lenguaje.html">El Lenguaje SQL</a>
+                                <a class="dropdown-item" href="lecturas-tipos.html">Tipos de Sentencia SQL</a>
+                                <a class="dropdown-item" href="lecturasbd.html">Bases de Datos en MySQL</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Multimedia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Actividades</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Actividades 1</a>
+                                <a class="dropdown-item" href="#">Actividades 2</a>
+                                <a class="dropdown-item" href="#">Actividades 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <nav class="navbar navbar-expand-xl">
+                        <form class="form-inline" action="#">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+            
+               
+            <header>
+                <div id="main_title">
+                    <h1>DISEÑO DEL MODELO RELACIONAL</h1>
+                </div>
+            </header>
+            
+            <div id="banner_image">
+                <div id="banner_description" style="text-align: justify">
+                    El proceso de diseño consiste en definir la estructura de los datos que debe tener un sistema de información determinado, mediante la implementación del modelo conceptual, lógico y físico de la base de datos.(campusMVP, s. f.)
+                    <a href="#" class="red_button">See article 
+                        <center><img src="img/diseñomr.png"/></center></a>
+                </div>
+            </div>
+                   <section>
+                       <article>
+                           <p style="text-align: justify">En el diseño conceptual se hace una descripción de alto nivel de la estructura de la base de datos, independientemente del SGBD (Sistema Gestor de Bases de Datos) que se vaya a utilizar para manipularla. Su objetivo es describir el contenido de información de la base de datos y no las estructuras de almacenamiento que se necesitarán para manejar dicha información.
+                               <br>
+                               El diseño lógico parte del resultado del diseño conceptual y da como resultado una descripción de la estructura de la base de datos en términos de las estructuras de datos que puede procesar un tipo de SGBD. El diseño lógico depende del tipo de SGBD que se vaya a utilizar, se adapta a la tecnología que se debe emplear, pero no depende del producto concreto. En el caso de bases de datos convencionales relacionales (basadas en SQL para entendernos), el diseño lógico consiste en definir las tablas que existirán, las relaciones entre ellas, normalizarlas, etc...</br>
+                               <br>El diseño físico parte del lógico y da como resultado una descripción de la implementación de una base de datos en memoria secundaria: las estructuras de almacenamiento y los métodos utilizados para tener un acceso eficiente a los datos. Aquí el objetivo es conseguir una mayor eficiencia, y se tienen en cuenta aspectos concretos del SGBD sobre el que se vaya a implementar. Por regla general esto es transparente para el usuario, aunque conocer cómo se implementa ayuda a optimizar el rendimiento y la escalabilidad del sistema.</br>
+                           </p>
+                           <br>
+                           <h4>El Modelo Relacional</h4>
+                           </br>
+                           <p style="text-align: justify">En el modelo relacional las dos capas de diseño conceptual y lógico, se parecen mucho. Generalmente se implementan mediante diagramas de Entidad/Relación (modelo conceptual) y tablas y relaciones entre éstas (modelo lógico). Este es el modelo utilizado por los sistemas gestores de datos más habituales (SQL Server, Oracle, MySQL...).</p>
+                           <br><p>Diseñando una base de datos en el modelo relacional – campusMVP (s.f),Recuperado de: https://www.campusmvp.es/recursos/post/Disenando-una-base-de-datos-en-el-modelo-relacional.aspx</p>
+                           </br>
+                       </article>
+                   </section>
+                
+                <div id="fila6" class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contacto</div>
+                        <div class="card-body">
+                            <p>Direccion</p>
+                            <p>Email</p>
+                            <p>Telefono</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Redes Sociales:</div>
+                        <div class="card-body">
+                            tres Botones
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contador de Visitas</div>
+                        <div class="card-body">
+                            Url contador
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!--Fin fila 6-->
+        </div>
+        <!--Fin Container-->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-slim.min.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>Tipos de Sentencia - UNAD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico">
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!--Estilos-->
+        <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <div id="fila1" class="row">
+                <header>
+                <div class="col-sm-6"><img src="img/logoUNAD-HD.png"/></div>
+                <div class="col-sm-6"><h1>Administracion Base de Datos - UNAD</h1></div>
+                </header>
+            </div>
+            <!--Fin fila 1-->
+            
+            <div id="fila2" class="row">
+                <div class="col-sm-8">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Lecturas</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="lecturas.html">Administrador de Base de Datos DBA</a>
+                                <a class="dropdown-item" href="lecturas-diseño.html">Diseño del Modelo Relacional</a>
+                                <a class="dropdown-item" href="lecturas-lenguaje.html">El Lenguaje SQL</a>
+                                <a class="dropdown-item" href="lecturas-tipos.html">Tipos de Sentencia SQL</a>
+                                <a class="dropdown-item" href="lecturasbd.html">Bases de Datos en MySQL</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Multimedia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Actividades</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Actividades 1</a>
+                                <a class="dropdown-item" href="#">Actividades 2</a>
+                                <a class="dropdown-item" href="#">Actividades 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <nav class="navbar navbar-expand-xl">
+                        <form class="form-inline" action="#">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+            
+        <div id="main_wrapper">
+            <header>
+                <div id="main_title">
+                    <br><h1>TIPOS DE SENTENCIA SQL</h1></br>
+                </div>
+            </header>
+
+            <div id="banner_image">
+                <div id="banner_description" style="text-align: justify">
+                    En SQL tenemos bastantes sentencias que se pueden utilizar para realizar diversas tareas. 
+                    Dependiendo de las tareas, estas sentencias se pueden clasificar en tres grupos principales (DML, DDL,DCL), aunque nos quedaría otro grupo que a mi entender no está dentro del lenguaje SQL sino del PLSQL.
+                </div>
+            </div>
+            <section>
+                <article>
+                    <br>
+                    <h5>COMPONENTES SINTÁCTICOS</h5></br>
+                    <p style="text-align: justify">La mayoría de sentencias SQL tienen la misma estructura. Todas comienzan por un verbo (select, insert, update, create), a continuación le sigue una o más cláusulas que nos dicen los datos con los que vamos a operar (from, where), algunas de estas son opcionales y otras obligatorias como es el caso del from.
+                    </p>
+                    </br>
+                    <center><img src="img/sentencia.png"/><p> Tipos de sentencias SQL y sus componentes sintácticos(2007),Recuperado de: https://desarrolloweb.com/articulos/tipos-de-sentencias-sql.html</p></center>  
+                    <br>  
+                    <h5>SENTENCIA DESCRIPCIÓN</h5></br>
+                    <h5>DML</h5>
+                    <p>Manipulación de datos</p>
+                    <p><b>SELECT</b>Recupera datos de la base de datos.</p>
+                    <p><b>INSERT</b>Añade nuevas filas de datos a la base de datos.</p>
+                    <p><b>DELETE</b>Suprime filas de datos de la base de datos.</p>
+                    <p><b>UPDATE</b>Añade una nueva tabla a la base de datos.</p>
+                    <br><h5>DDL</h5> 
+                    <p>Definición de datos</p>
+                    <p><b>CREATE TABLE</b>Añade una nueva tabla a la base  de datos</p>
+                    <p><b>DROP TABLE</b>Modifica la estructura de una tabla existente.</p>
+                    <p><b>ALTER TABLE</b>Añade una nueva vista a la base de datos.</p>
+                    <p><b>CREATE VIEW</b>Suprime una vista de la base de datos.</p>
+                    <p><b>DROP VIEW</b>Construye un índice para una columna. </p>
+                    <p><b>CREATE INDEX</b>Suprime el índice para una columna.</p>
+                    <p><b>DROP INDEX</b>Define un alias para un nombre de tabla.</p>
+                    <p><b>CREATE SYNOYM</b>Suprime un alias para un nombre de tabla.</p>
+                    <p><b>DROP SYNONYM</b></p>
+                    <br><h5>DCL</h5>
+                    <p>Control de acceso</p>
+                    <p><b>GRANT</b>Concede privilegios de acceso a usuarios.</p>
+                    <p><b>REVOKE</b>Suprime privilegios de acceso a usuarios</p>
+                    <p><b>Control de transacciones</b>Finaliza la transacción actual. </p>
+                    <p><b>COMMIT</b>Abarata la transacción actual.</p>
+                    <p><b>ROLLBACK</b></p>
+                    <br><h5>PLSQL</h5> 
+                    <p><b>SQL Programático</b>Define un curso para una consulta.</p>
+                    <p><b>DECLARE</b></p>
+                    <p><b>OPEN </b>Abre un cursor para recuperar resultados de consulta.</p>
+                    <p><b>FETCH</b>Recupera una fila de resultados de consulta.</p>
+                    <p><b>CLOSE</b>Cierra un cursor.</p>
+                    <br>  
+                </article>
+            </div>
+                <div id="fila6" class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contacto</div>
+                        <div class="card-body">
+                            <p>Direccion</p>
+                            <p>Email</p>
+                            <p>Telefono</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Redes Sociales:</div>
+                        <div class="card-body">
+                            tres Botones
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Contador de Visitas</div>
+                        <div class="card-body">
+                            Url contador
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!--Fin fila 6-->
+        </div>
+        <!--Fin Container-->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-slim.min.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
