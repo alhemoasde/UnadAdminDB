@@ -8,9 +8,8 @@
         <link rel="icon" href="img/favicon.ico">
         <!-- Bootstrap CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
         <!--Estilos-->
-        <link href="css/Lecturas.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
         
     </head>
     <body>
@@ -28,7 +27,7 @@
                 <div class="col-sm-8">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio</a>
+                            <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Lecturas</a>
@@ -65,8 +64,8 @@
                     </nav>
                 </div>
             </div>
-            </div>
-               <div id="main_wrapper">
+            
+               
             <header>
                 <div id="main_title">
                     <h1>DISEÑO DEL MODELO RELACIONAL</h1>
@@ -74,31 +73,28 @@
             </header>
             
             <div id="banner_image">
-                <div id="banner_description">
+                <div id="banner_description" style="text-align: justify">
                     El proceso de diseño consiste en definir la estructura de los datos que debe tener un sistema de información determinado, mediante la implementación del modelo conceptual, lógico y físico de la base de datos.(campusMVP, s. f.)
                     <a href="#" class="red_button">See article 
-                        <center><img src="diseñomr.png"/></a></center>
+                        <center><img src="img/diseñomr.png"/></center></a>
                 </div>
             </div>
-            
-            <section>
-                <article>
-                    <p>En el diseño conceptual se hace una descripción de alto nivel de la estructura de la base de datos, independientemente del SGBD (Sistema Gestor de Bases de Datos) que se vaya a utilizar para manipularla. Su objetivo es describir el contenido de información de la base de datos y no las estructuras de almacenamiento que se necesitarán para manejar dicha información.
-<br>
-El diseño lógico parte del resultado del diseño conceptual y da como resultado una descripción de la estructura de la base de datos en términos de las estructuras de datos que puede procesar un tipo de SGBD. El diseño lógico depende del tipo de SGBD que se vaya a utilizar, se adapta a la tecnología que se debe emplear, pero no depende del producto concreto. En el caso de bases de datos convencionales relacionales (basadas en SQL para entendernos), el diseño lógico consiste en definir las tablas que existirán, las relaciones entre ellas, normalizarlas, etc...</br>
-<br>El diseño físico parte del lógico y da como resultado una descripción de la implementación de una base de datos en memoria secundaria: las estructuras de almacenamiento y los métodos utilizados para tener un acceso eficiente a los datos. Aquí el objetivo es conseguir una mayor eficiencia, y se tienen en cuenta aspectos concretos del SGBD sobre el que se vaya a implementar. Por regla general esto es transparente para el usuario, aunque conocer cómo se implementa ayuda a optimizar el rendimiento y la escalabilidad del sistema.</br>
-</p>
-                <br>
-                    <h4><alt=/>El Modelo Relacional</h4>
-                </br>
-                    <p>En el modelo relacional las dos capas de diseño conceptual y lógico, se parecen mucho. Generalmente se implementan mediante diagramas de Entidad/Relación (modelo conceptual) y tablas y relaciones entre éstas (modelo lógico). Este es el modelo utilizado por los sistemas gestores de datos más habituales (SQL Server, Oracle, MySQL...).</p>
-                <br><p>Diseñando una base de datos en el modelo relacional – campusMVP (s.f),Recuperado de: https://www.campusmvp.es/recursos/post/Disenando-una-base-de-datos-en-el-modelo-relacional.aspx</p>
-                </br>
-                </article>
-                <aside>
+                   <section>
+                       <article>
+                           <p style="text-align: justify">En el diseño conceptual se hace una descripción de alto nivel de la estructura de la base de datos, independientemente del SGBD (Sistema Gestor de Bases de Datos) que se vaya a utilizar para manipularla. Su objetivo es describir el contenido de información de la base de datos y no las estructuras de almacenamiento que se necesitarán para manejar dicha información.
+                               <br>
+                               El diseño lógico parte del resultado del diseño conceptual y da como resultado una descripción de la estructura de la base de datos en términos de las estructuras de datos que puede procesar un tipo de SGBD. El diseño lógico depende del tipo de SGBD que se vaya a utilizar, se adapta a la tecnología que se debe emplear, pero no depende del producto concreto. En el caso de bases de datos convencionales relacionales (basadas en SQL para entendernos), el diseño lógico consiste en definir las tablas que existirán, las relaciones entre ellas, normalizarlas, etc...</br>
+                               <br>El diseño físico parte del lógico y da como resultado una descripción de la implementación de una base de datos en memoria secundaria: las estructuras de almacenamiento y los métodos utilizados para tener un acceso eficiente a los datos. Aquí el objetivo es conseguir una mayor eficiencia, y se tienen en cuenta aspectos concretos del SGBD sobre el que se vaya a implementar. Por regla general esto es transparente para el usuario, aunque conocer cómo se implementa ayuda a optimizar el rendimiento y la escalabilidad del sistema.</br>
+                           </p>
+                           <br>
+                           <h4>El Modelo Relacional</h4>
+                           </br>
+                           <p style="text-align: justify">En el modelo relacional las dos capas de diseño conceptual y lógico, se parecen mucho. Generalmente se implementan mediante diagramas de Entidad/Relación (modelo conceptual) y tablas y relaciones entre éstas (modelo lógico). Este es el modelo utilizado por los sistemas gestores de datos más habituales (SQL Server, Oracle, MySQL...).</p>
+                           <br><p>Diseñando una base de datos en el modelo relacional – campusMVP (s.f),Recuperado de: https://www.campusmvp.es/recursos/post/Disenando-una-base-de-datos-en-el-modelo-relacional.aspx</p>
+                           </br>
+                       </article>
+                   </section>
                 
-                </footer>
-        </div>
                 <div id="fila6" class="row">
                 <div class="col-sm-4">
                     <div class="card">

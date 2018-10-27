@@ -10,7 +10,7 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
         <!--Estilos-->
-        <link href="css/Lecturas.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
         
     </head>
     <body>
@@ -28,7 +28,7 @@
                 <div class="col-sm-8">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio</a>
+                            <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Lecturas</a>
@@ -65,51 +65,48 @@
                     </nav>
                 </div>
             </div>
-            </div>
-               <div id="main_wrapper">
-            <header>
-                <div id="main_title"><br>
-                    <h1>BASE DE DATOS EN MySQL</h1>
-                    </br>
-                </div>
-            </header>
             
-            <div id="banner_image">
-                <div id="banner_description">
-                   MySQL es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base datos de código abierto más popular del mundo,12 y una de las más populares en general junto a Oracle y Microsoft SQL Server, sobre todo para entornos de desarrollo web.
-<br>
-MySQL fue inicialmente desarrollado por MySQL AB (empresa fundada por David Axmark, Allan Larsson y Michael Widenius). MySQL AB fue adquirida por Sun Microsystems en 2008, y ésta a su vez fue comprada por Oracle Corporation en 2010, la cual ya era dueña desde 2005 de Innobase Oy, empresa finlandesa desarrolladora del motor InnoDB para MySQL.</br>
-<br>
-Al contrario de proyectos como Apache, donde el software es desarrollado por una comunidad pública y los derechos de autor del código están en poder del autor individual, MySQL es patrocinado por una empresa privada, que posee el copyright de la mayor parte del código. Esto es lo que posibilita el esquema de doble licenciamiento anteriormente mencionado. La base de datos se distribuye en varias versiones, una Community, distribuida bajo la Licencia pública general de GNU, versión 2, y varias versiones Enterprise, para aquellas empresas que quieran incorporarlo en productos privativos. Las versiones Enterprise incluyen productos o servicios adicionales tales como herramientas de monitorización y asistencia técnica oficial. En 2009 se creó un fork denominado MariaDB por algunos desarrolladores (incluido algunos desarrolladores originales de MySQL) descontentos con el modelo de desarrollo y el hecho de que una misma empresa controle a la vez los productos MySQL y Oracle Database.3</br>
-<br>
-Está desarrollado en su mayor parte en ANSI C y C++.4 Tradicionalmente se considera uno de los cuatro componentes de la pila de desarrollo LAMP y WAMP.</br>
-                      <br>
-                    <center><img src="bdmysql.png"/></center></a> 
-                </br>
+            <div id="main_wrapper">
+                <header>
+                    <div id="main_title"><br>
+                        <h1>BASE DE DATOS EN MySQL</h1>
+                        </br>
+                    </div>
+                </header>
+
+                <div id="banner_image">
+                    <div id="banner_description" style="text-align: justify">
+                        MySQL es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base datos de código abierto más popular del mundo,12 y una de las más populares en general junto a Oracle y Microsoft SQL Server, sobre todo para entornos de desarrollo web.
+                        <br>
+                        MySQL fue inicialmente desarrollado por MySQL AB (empresa fundada por David Axmark, Allan Larsson y Michael Widenius). MySQL AB fue adquirida por Sun Microsystems en 2008, y ésta a su vez fue comprada por Oracle Corporation en 2010, la cual ya era dueña desde 2005 de Innobase Oy, empresa finlandesa desarrolladora del motor InnoDB para MySQL.</br>
+                        <br>
+                        Al contrario de proyectos como Apache, donde el software es desarrollado por una comunidad pública y los derechos de autor del código están en poder del autor individual, MySQL es patrocinado por una empresa privada, que posee el copyright de la mayor parte del código. Esto es lo que posibilita el esquema de doble licenciamiento anteriormente mencionado. La base de datos se distribuye en varias versiones, una Community, distribuida bajo la Licencia pública general de GNU, versión 2, y varias versiones Enterprise, para aquellas empresas que quieran incorporarlo en productos privativos. Las versiones Enterprise incluyen productos o servicios adicionales tales como herramientas de monitorización y asistencia técnica oficial. En 2009 se creó un fork denominado MariaDB por algunos desarrolladores (incluido algunos desarrolladores originales de MySQL) descontentos con el modelo de desarrollo y el hecho de que una misma empresa controle a la vez los productos MySQL y Oracle Database.3</br>
+                        <br>
+                        Está desarrollado en su mayor parte en ANSI C y C++.4 Tradicionalmente se considera uno de los cuatro componentes de la pila de desarrollo LAMP y WAMP.</br>
+                        <br>
+                        <center><img src="img/bdmysql.png"/></center> 
+                        </br>
+                    </div>
                 </div>
-            </div>
-            
-            <section>
-                <article>
-                      <br>
-                    <h5><alt=/>Lenguajes de programación</h5>
-                      </br>
-                    <p>Existen varias interfaces de programación de aplicaciones que permiten, a aplicaciones escritas en diversos lenguajes de programación, acceder a las bases de datos MySQL, incluyendo C, C++, C#, Pascal, Delphi (vía dbExpress), Eiffel, Smalltalk, Java (con una implementación nativa del driver de Java), Lisp, Perl, PHP, Python, Ruby, Gambas, REALbasic (Mac y Linux), (x)Harbour (Eagle1), FreeBASIC, y Tcl; cada uno de estos utiliza una interfaz de programación de aplicaciones específica. También existe una interfaz ODBC, llamado MyODBC que permite a cualquier lenguaje de programación que soporte ODBC comunicarse con las bases de datos MySQL. También se puede acceder desde el sistema SAP, lenguaje ABAP.</p>
-                <br>
-                    <h5><alt=/>Características </h5></article
-                </br>
-                    <p>Las siguientes características son implementadas únicamente por MySQL:</p>
-                    <p>Permite escoger entre múltiples motores de almacenamiento para cada tabla. En MySQL 5.0 éstos debían añadirse en tiempo de compilación, a partir de MySQL 5.1 se pueden añadir dinámicamente en tiempo de ejecución:</p>
-                    <p>Los hay nativos como MyISAM, Falcon, Merge, InnoDB, BDB, Memory/heap, MySQL Cluster, Federated, Archive, CSV, Blackhole y Example.</p>
-                    <p>Desarrollados por partners como solidDB, NitroEDB, ScaleDB, TokuDB, Infobright (antes Brighthouse), Kickfire, XtraDB, IBM DB2. InnoDB Estuvo desarrollado así pero ahora pertenece también a Oracle.</p>
-                    <p>Desarrollados por partners como solidDB, NitroEDB, ScaleDB, TokuDB, Infobright (antes Brighthouse), Kickfire, XtraDB, IBM DB2. InnoDB Estuvo desarrollado así pero ahora pertenece también a Oracle.</p>
-                    <p>MySQL,(2018).Recuperado de: https://es.wikipedia.org/wiki/MySQL#Caracter%C3%ADsticas_adicionales</p>
-                   
-                </article>
-                <aside>
-       
-            </footer>
-        </div>
+
+                <section>
+                    <article>
+                        <br>
+                        <h5>Lenguajes de programación</h5>
+                        </br>
+                        <p style="text-align: justify">Existen varias interfaces de programación de aplicaciones que permiten, a aplicaciones escritas en diversos lenguajes de programación, acceder a las bases de datos MySQL, incluyendo C, C++, C#, Pascal, Delphi (vía dbExpress), Eiffel, Smalltalk, Java (con una implementación nativa del driver de Java), Lisp, Perl, PHP, Python, Ruby, Gambas, REALbasic (Mac y Linux), (x)Harbour (Eagle1), FreeBASIC, y Tcl; cada uno de estos utiliza una interfaz de programación de aplicaciones específica. También existe una interfaz ODBC, llamado MyODBC que permite a cualquier lenguaje de programación que soporte ODBC comunicarse con las bases de datos MySQL. También se puede acceder desde el sistema SAP, lenguaje ABAP.</p>
+                        <br>
+                        <h5>Características </h5>
+                        </br>
+                        <p style="text-align: justify">Las siguientes características son implementadas únicamente por MySQL:</p>
+                        <p style="text-align: justify">Permite escoger entre múltiples motores de almacenamiento para cada tabla. En MySQL 5.0 éstos debían añadirse en tiempo de compilación, a partir de MySQL 5.1 se pueden añadir dinámicamente en tiempo de ejecución:</p>
+                        <p style="text-align: justify">Los hay nativos como MyISAM, Falcon, Merge, InnoDB, BDB, Memory/heap, MySQL Cluster, Federated, Archive, CSV, Blackhole y Example.</p>
+                        <p style="text-align: justify">Desarrollados por partners como solidDB, NitroEDB, ScaleDB, TokuDB, Infobright (antes Brighthouse), Kickfire, XtraDB, IBM DB2. InnoDB Estuvo desarrollado así pero ahora pertenece también a Oracle.</p>
+                        <p style="text-align: justify">Desarrollados por partners como solidDB, NitroEDB, ScaleDB, TokuDB, Infobright (antes Brighthouse), Kickfire, XtraDB, IBM DB2. InnoDB Estuvo desarrollado así pero ahora pertenece también a Oracle.</p>
+                        <p style="text-align: justify">MySQL,(2018).Recuperado de: https://es.wikipedia.org/wiki/MySQL#Caracter%C3%ADsticas_adicionales</p>
+                    </article>
+                    <section>
+                        </div>
                 <div id="fila6" class="row">
                 <div class="col-sm-4">
                     <div class="card">
