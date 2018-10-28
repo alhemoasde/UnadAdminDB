@@ -41,11 +41,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/navbar/icons8-literatura-32.png"/> Lecturas</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Lecturas 1</a>
-                                <a class="dropdown-item" href="#">Lecturas 2</a>
-                                <a class="dropdown-item" href="#">Lecturas 3</a>
-                                <a class="dropdown-item" href="#">Lecturas 4</a>
-                                <a class="dropdown-item" href="#">Lecturas 5</a>
+                                <a class="dropdown-item" href="lecturas.html">Administrador de Base de Datos DBA</a>
+                                <a class="dropdown-item" href="lecturas-diseño.html">Diseño del Modelo Relacional</a>
+                                <a class="dropdown-item" href="lecturas-lenguaje.html">El Lenguaje SQL</a>
+                                <a class="dropdown-item" href="lecturas-tipos.html">Tipos de Sentencia SQL</a>
+                                <a class="dropdown-item" href="lecturasbd.html">Bases de Datos en MySQL</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -64,7 +64,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="img/navbar/icons8-derechos-de-autor-32.png"/>Autores</a>
+                            <a class="nav-link" href="autores.html"><img src="img/navbar/icons8-derechos-de-autor-32.png"/>Autores</a>
                         </li>
                     </ul>
                 </div>
@@ -80,98 +80,53 @@
             <!--Fin fila 2-->
                 <div id="fila3" class="row">
                     <div class="col-sm-12">
-                        <h3>Actividad Pedagógica Sobre Administración de Bases de Datos</h3>
-                        <div id="objPricipal" class="alert alert-info" role="alert">
-                                Respetado Estudiante Unadista a continuación usted podrá reforzar su conocimientos 
-                                con una serie de actividades pedagógicas que le permitiran asimilar mejor los conocimiento recibidos. <strong>Bienvenido</strong>. 
-                            </div>
+                        <h3>AUTORES</h3>
                     </div>
                 </div>
             <!--Fin fila 3-->
             <div id="fila4" class="row">
-                <div class="col-sm-12">
-                    <div class="card">
-                        <div class="card-header">Test de Conocimientos</div>
-                       <div id="trivia" class="card-body">
-                        <!--xxxxxxxxxxxxxxx-->
-                        <h2><div id="pregunta" class="badge badge-secondary"> </div></h2>
-                        <div id="respuestas" ><input name="pp" value="0" type="radio"><label> </label><br><input name="pp" value="1" type="radio"><label>Tienen hambre</label><br><input name="pp" value="2" type="radio"><label> </label><br><input name="pp" value="3" type="radio"><label>Tienen frío</label><br></div>
-
-                        <button type="button" class="btn btn-success" onclick="comprobar()">Validar Respuesta</button>
+                <div class="col-sm-6" style="align-content: center">
+                    <div class="card" >
+                        <div class="card-header" style="background-color: transparent">
+                            <img src="img/mafe.jpg" alt="Maria Fernanda Tovar Diaz" width="288px" height="323px">
+                        </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="img/femenino.png"/> Maria Fernanda Tovar Diaz</h5>
+                            <br>
+                            <div class="card-text" style="text-align: justify; padding-left: 8px">
+                                <ul class="list-group">
+                                <li class="list-group-item"><strong>Programa:</strong> Ingenieria de Sistemas</li>
+                                <li class="list-group-item"><strong>Curso:</strong> Diseño de Sitios Web</li>
+                                <li class="list-group-item"><strong>Codigo:</strong> 1106889554</li>
+                                <li class="list-group-item"><strong>Email:</strong> marifertd_18@hotmail.com</li>
+                                <li class="list-group-item"><strong>Skype:</strong> marifertd_18</li>
+                            </ul>
+                            </div>
+                            <a href="mailto:marifertd_18@hotmail.com?Subject=PaginaWebUNAD%20again" class="btn btn-primary">Contactar</a>
+                        <br>
                         </div>
-                        <script>
-                                var preguntas = [
-                                "¿De quien depende la disponibilidad de los datos?",
-                                "¿Que significa esta sigla SGBD?",
-                                "El Administrador de Bases de Datos tambien se le conoce como:",
-                                "Una de las funciones mas relevantes que debe desarrollar un DBA es:"
-
-                                ];
-                                var respuestas = [
-                                ["Administrador", "Del Gerente de la organización", "Del hardware del sevidor", "Tú"],
-                                ["Sistema Gestor de Bases de Datos", "Sistema Guia de Bases de Datos", "Sistema General Basado en Datos", "Sistema Gradual Binario de Datos"],
-                                ["DBA - DataBase Administrator", "DVA - DataBase Administrator", "BDA - DataBase Administrator", "Admin"],
-                                ["Crear y configurar bases de datos relacionales", "Realizar el levantamiento de requerimientos", "Realizar pruebas unitarias", "Dirigir el grupo de desarrollo"]
-
-                                ];
-                        jugar();
-
-                                var indicie_respuesta_correcta;
-
-                        function jugar(){
-                                        var indice_aleatorio = Math.floor(Math.random()*preguntas.length);
-
-                                var respuestas_posibles = respuestas[indice_aleatorio];
-
-
-                                var posiciones = [0,1,2,3];
-                                var respuestas_reordenadas = [];
-
-                                var respuestaOk = false;
-                                for(i in respuestas_posibles){
-                                        var posicion_aleatoria = Math.floor(Math.random()*posiciones.length);
-                                        if(posicion_aleatoria==0 && respuestaOk == false){
-                                                indicie_respuesta_correcta =i;
-                                                respuestaOk = true;
-                                        }
-                                        respuestas_reordenadas[i] = respuestas_posibles[posiciones[posicion_aleatoria]];
-                                        posiciones.splice(posicion_aleatoria, 1);
-                                }
-
-                                var txt_respuestas="";
-                                for(i in respuestas_reordenadas){
-                                        txt_respuestas += '<input type="radio" name="pp" value="'+i+'"><label>'+respuestas_reordenadas[i]+'</label><br>';
-                                }
-
-                                document.getElementById("respuestas").innerHTML = txt_respuestas;
-                                document.getElementById("pregunta").innerHTML = preguntas[indice_aleatorio];
-
-                        }
-                        function comprobar(){
-                        var respuesta = $("input[type=radio]:checked").val();
-
-                        //alert(respuesta);
-                        //alert(indicie_respuesta_correcta);
-                        if(respuesta ==indicie_respuesta_correcta){
-                                alert("Correcto, Felicitaciones!");
-                                '<div class="alert alert-success" role="alert">'
-                                    'Correcto, Felicitaciones!'
-                                  '</div>'
-                        }else{
-                                alert("Error, Revisa el Material de Estudio.");
-                                '<div class="alert alert-danger" role="alert">'
-                                    'Error, Revisa el Material de Estudio.'
-                                  '</div>'
-                        }
-                        jugar();
-                        }
-                        </script>
-                        <!--xxxxxxxxxxxxxxx-->
                         
-                        
-                        
-                        
-                        
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card" >
+                        <div class="card-header" style="background-color: transparent">
+                            <img src="img/Alejo.jpeg" alt="Alejandro Herrera Montilla" width="288" height="323px">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="img/masculino.png"/> Alejandro Herrera Montilla</h5>
+                            <br>
+                            <div class="card-text" style="text-align: justify; padding-left: 8px">
+                                <ul class="list-group">
+                                <li class="list-group-item"><strong>Programa:</strong> Ingenieria de Sistemas</li>
+                                <li class="list-group-item"><strong>Curso:</strong> Diseño de Sitios Web</li>
+                                <li class="list-group-item"><strong>Codigo:</strong> 1106888627</li>
+                                <li class="list-group-item"><strong>Email:</strong> alhemoasde@hotmail.com</li>
+                                <li class="list-group-item"><strong>Skype:</strong> alhemoasde</li>
+                            </ul>
+                            </div>
+                            <a href="mailto:alhemoasde@gmail.com?Subject=PaginaWebUNAD%20again" class="btn btn-primary">Contactar</a>
+                        </div>
                     </div>
                     <br>
                 </div>
