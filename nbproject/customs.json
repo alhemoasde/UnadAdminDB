@@ -3,5 +3,9 @@
         "div": {},
         "img": {}
     },
-    "attributes": {}
+    "attributes": {
+        "allow": {
+            "context": "iframe"
+        }
+    }
 }
