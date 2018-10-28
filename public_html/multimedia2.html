@@ -17,6 +17,8 @@
         <!--Estilos-->
         <link href="css/Inicio.css" rel="stylesheet" type="text/css"/>
         
+        <!--Panel Social-->
+        <link href="css/panel.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container-fluid">
@@ -128,6 +130,32 @@
                         <a href="https://www.flickr.com/photos/universidadunad" target="_blank"><img src="img/redesSociales/icons8-flickr-48.png" title="Síganos en FlickR - UniversidadUNAD"/></a>
                         <a href="https://www.instagram.com/universidadunad/" target="_blank"><img src="img/redesSociales/icons8-instagram-48.png" title="Síganos en Instagram - @UniversidadUNAD"/></a>
                         </div> 
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-md-6" style="max-width: none; flex: 3 0 50%;">
+                                    <div class="card card-primary">
+                                        <div class="card-header" style="background-color: #F0B429;">
+                                            <h4 class="card-title">
+                                                Widget Twitter UNAD
+                                                <a href="#" data-perform="card-collapse" ><img src="img/minimizar-ventana.png"/></a>
+                                                <a href="#" data-perform="card-dismiss" ><img src="img/cerrar-ventana.png"/></a>
+                                            </h4>
+                                        </div>
+
+                                        <div class="card-wrapper collapse">
+                                            <div class="card-body">
+
+                                                <!--Inicio Codigo twitter-->
+                                                <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> 
+                                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                                <!--Fin Codigo twitter-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -160,5 +188,7 @@
         <script src="js/popper.min.js" type="text/javascript"></script>
         <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--Panel Social-->
+        <script src="js/panel.js" type="text/javascript"></script>
     </body>
 </html>
